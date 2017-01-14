@@ -116,6 +116,7 @@ if(isset($_POST['submit'])){
 	$sql_query1 = "SELECT * FROM monitor WHERE SerialNumber='".$serial."'";
 	$result_q1 = $conn->query($sql_query1);
 	if($result_q1->num_rows > 0){
+		
 		$tbname = "monitor";
 		
 		}
