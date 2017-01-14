@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>Balance</title>
+<link rel="stylesheet" type="text/css" href="inventory.css">
+</head>
+<body>
+<h2>Label Team Inventory System</h2>
+
+<ul>
+	<li><a class="active" href="mysqltest.php">Balance</a></li>
+	<li><a href="addrmv.php">Add</a></li>
+	<li><a href="update.php">Move</a></li>
+	<li><a href="idbyloc.php">Balance by Loc</a></li>
+	<li><a href="delete.php">Delete</a></li>
+</ul>
+<form id="balance" method="POST" action="<?php echo $_SERVER['PHP_SELF']?>" name="balance">
+
+<select id="select" name="option">
+  <option value="monitor" name="monitor">Monitor</option>
+  <option value="imprimanta" name="imprimanta">Imprimanta</option>
+  <option value="ups" name="ups">UPS</option>
+  <option value="scaner" name="scaner">Scaner</option>
+  <option value="pc" name="pc">PC</option>
+  <option value="compimp" name="compimp">Componente Imprimanta</option>
+  <option value="comppc" name="comppc">Componente PC</option>
+</select><br>
+<input id="sub1" type="submit" name="submit" value="Submit" /><br>
+
+<table class="t1">
+	<tr id="tr">
+	<thead>
+		<th id="th1">Serial Number</th>
+		<th id="th2">Descriere</th>
+		<th id="th3">Locatie</th>
+		<th id="th4">Status</th>
+		<th id="th5">Capex</th>
+		<th id="th6">Numar Inventar FAR</th>
+	</thead>
+	</tr>
+<?php include 'mysqltest.php'; ?>
+</div>
+</body>
+</html>

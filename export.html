@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<title>Export</title>
+<link rel="stylesheet" type="text/css" href="inventory.css">
+</head>
+<body>
+<h2>Label Team Inventory System</h2>
+
+<ul>
+	<li><a href="mysqltest.php">Balance</a></li>
+	<li><a href="addrmv.php">Add</a></li>
+	<li><a href="update.php">Update</a></li>
+	<li><a href="index.php">Balance by Loc</a></li>
+	<li><a href="delete.php">Delete</a></li>
+	<li><a href="transactions.php">Transactions</a></li>
+	<li><a class="active" href="export.html">Export</a></li>
+</ul>
+<form id="addmv" method="POST" action="export.php" name="addmv">
+<br>
+<select id="option" name="option">
+  <option value="blank" name="blank"></option>
+  <option value="monitor" name="monitor">Monitor</option>
+  <option value="imprimanta" name="imprimanta">Imprimanta</option>
+  <option value="ups" name="ups">UPS</option>
+  <option value="scaner" name="scaner">Scaner</option>
+  <option value="pc" name="pc">PC</option>
+  <option value="compimp" name="compimp">Componente Imprimanta</option>
+  <option value="comppc" name="comppc">Componente PC</option>
+   <option value="turn_aps" name="turn_aps">Turn APS</option>
+   <option value="amg_assets" name="amg_assets">AMG Assets</option>
+  <option value="toate" name="toate">Toate</option>
+</select><br>
+<input id="sub2" type="submit" name="submit" value="Submit" /><br>
